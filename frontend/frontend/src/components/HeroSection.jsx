@@ -4,7 +4,7 @@ export const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center px-4 scroll-smooth"
+      className="relative min-h-screen flex items-center justify-center px-4"
     >
       <div className="container max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12 text-center md:text-left z-10">
 
@@ -26,28 +26,22 @@ export const HeroSection = () => {
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <a
-              href="#projects"
-              className="px-6 py-3 rounded-lg text-white bg-primary hover:bg-primary/90 transition-all duration-300 shadow-md"
-            >
+            <a href="#projects" className="cosmic-button">
               View My Work
             </a>
           </div>
         </div>
 
-        {/* Right: Profile Image with gradient border */}
-        <div className="flex-1 flex justify-center mt-12 mb-0 md:mt-0 md:mb-0 opacity-0 animate-fade-in-delay-2">
-          <div className="p-1 rounded-full bg-gradient-to-tr from-primary to-purple-500 shadow-lg">
-            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden">
-              <img
-                src="MyPhoto.jpg"  
-                alt="Ashini Garusinghe"
-                 className="w-full h-full object-cover"
-              />
-            </div>
+        {/* Right: Profile Image */}
+        <div className="flex-1 flex justify-center opacity-0 animate-fade-in-delay-2">
+          <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary shadow-lg">
+            <img
+              src="MyPhoto.jpg"  // Make sure this image is in your public folder
+              alt="Ashini Garusinghe"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
-
       </div>
 
       {/* Scroll Arrow */}
