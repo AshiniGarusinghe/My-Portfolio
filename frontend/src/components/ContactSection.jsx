@@ -38,8 +38,8 @@ export const ContactSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Have a project in mind or want to collaborate? Feel free to reach out.
-          I'm always open to discussing new opportunities.
+          Have an idea you'd like to bring to life or a project you'd like to collaborate on? 
+          Let's connect. I'm always open to exciting new opportunities.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -48,9 +48,9 @@ export const ContactSection = () => {
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
 
             <div className="space-y-6 justify-center">
-              <ContactItem icon={<Mail className="h-6 w-6 text-primary" />} label="Email" value="hello@gmail.com" link="mailto:hello@gmail.com" />
-              <ContactItem icon={<Phone className="h-6 w-6 text-primary" />} label="Phone" value="+1 (123) 456-7890" link="tel:+11234567890" />
-              <ContactItem icon={<MapPin className="h-6 w-6 text-primary" />} label="Location" value="Vancouver, BC, Canada" />
+              <ContactItem icon={<Mail className="h-6 w-6 text-primary" />} label="Email" value="ashinigarusinghe740@gmail.com" link="mailto:ashinigarusinghe740@gmail.com" />
+              <ContactItem icon={<Phone className="h-6 w-6 text-primary" />} label="Phone" value="+94 71 091 3042" link="+94 71 091 3042" />
+              <ContactItem icon={<MapPin className="h-6 w-6 text-primary" />} label="Location" value="Colombo, Sri Lanka" />
             </div>
 
             <div className="pt-8">
