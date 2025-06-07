@@ -5,7 +5,6 @@ import {
   MapPin,
   Phone,
   Send,
-  Twitch,
   Twitter,
 } from "lucide-react";
 
@@ -56,22 +55,30 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4">Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <SocialLink icon={<Linkedin />} />
-                <SocialLink icon={<Twitter />} />
-                <SocialLink icon={<Instagram />} />
-                <SocialLink icon={<Twitch />} />
+                <SocialLink 
+                  icon={<Linkedin />} 
+                  href="https://www.linkedin.com/in/ashini-garusinghe-baa04a319"
+                />
+                <SocialLink 
+                  icon={<Twitter />} 
+                  href="#"
+                />
+                <SocialLink 
+                  icon={<Instagram />} 
+                  href="#"
+                />
               </div>
             </div>
+            
           </div>
 
           {/* Contact Form */}
           <div className="bg-card p-8 rounded-lg shadow-xs">
             <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
             <form className="space-y-6" onSubmit={handleSubmit}>
-              <FormInput id="name" label="Your Name" placeholder="Pedro Machado..." type="text" />
-              <FormInput id="email" label="Your Email" placeholder="john@gmail.com" type="email" />
-              <FormTextArea id="message" label="Your Message" placeholder="Hello, I'd like to talk about..." />
-
+              <FormInput id="name" label="Your Name" placeholder="Enter your name" type="text" />
+              <FormInput id="email" label="Your Email" placeholder="Enter your email" type="email" />
+              <FormTextArea id="message" label="Your Message" placeholder="Enter your message" />
               <button
                 type="submit"
                 disabled={isSubmitting}
@@ -82,6 +89,7 @@ export const ContactSection = () => {
               </button>
             </form>
           </div>
+
         </div>
       </div>
     </section>
@@ -106,11 +114,12 @@ const ContactItem = ({ icon, label, value, link }) => (
   </div>
 );
 
-const SocialLink = ({ icon }) => (
-  <a href="#" target="_blank" rel="noopener noreferrer">
+const SocialLink = ({ icon, href }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer">
     {icon}
   </a>
 );
+
 
 const FormInput = ({ id, label, placeholder, type = "text" }) => (
   <div>

@@ -3,34 +3,33 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
+    title: "Inventory Management System",
+    description: "A responsive inventory management system built using React and Tailwind CSS.",
+    image: "/public/projects/project1.jpg",
+    tags: ["React", "TailwindCSS"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/AshiniGarusinghe/Inventory-Management-System",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
-    description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
+    title: "Library Management System (Console)",
+    description: "A console-based library management system developed in Python to manage book records and transactions.",
+    image: "/public/projects/project2.jpg",
+    tags: ["Python"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/AshiniGarusinghe/Library-Management-System",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
-    description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+    title: "To-Do List Application",
+    description: "A clean and responsive to-do list app using React and Tailwind CSS, featuring task management with add, edit, and delete options.",
+    image: "/public/projects/project3.jpg",
+    tags: ["React", "TailwindCSS"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/AshiniGarusinghe/ToDoApp",
   },
 ];
+
 
 export const ProjectsSection = () => {
   return (
@@ -100,7 +99,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/AshiniGarusinghe"
           >
             Check My Github <ArrowRight size={16} />
           </a>
